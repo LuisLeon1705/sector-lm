@@ -2,7 +2,7 @@
 
     python -m neural.generate --prompt "def fibonacci(n):"
     python -m neural.generate                      # interactive: type code, end with an empty line
-    python -m neural.generate --model E1 --domain WebBackend --prompt "from flask import Flask"
+    python -m neural.generate --model Parallax-E --domain WebBackend --prompt "from flask import Flask"
 """
 from __future__ import annotations
 
@@ -24,6 +24,8 @@ CONTEXT = 512
 BOS_ID = 1
 CHECKPOINTS = {"D1": "D1", "D1+": "D1plus", "D2": "D2", "E1": "E1_all", "M1": "M1"}
 ARCH = {"D1": "D1", "D1+": "D1", "D2": "D2", "E1": "E1", "M1": "M1"}
+# Family names used in the docs; each maps to a code above.
+NAMES = {"Parallax-15M": "D1+", "Parallax-D15M": "D1", "Parallax-D27M": "D2", "Parallax-E": "E1", "Parallax-M": "M1"}
 
 
 def load(name: str, device: str):
@@ -66,7 +68,7 @@ def generate(model, tok, prompt: str, max_new: int, temperature: float, top_k: i
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--model", choices=list(CHECKPOINTS), default="D1+")
+    ap.add_argument("--model", choices=list(NAMES) + list(CHECKPOINTS), default="Parallax-15M")
     ap.add_argument("--domain", choices=DOMAINS, default="GeneralLocal", help="adapter used by E1")
     ap.add_argument("--prompt", help="code to continue; without it, an interactive session starts")
     ap.add_argument("--max-new", type=int, default=200, help="tokens to generate")
@@ -76,6 +78,8 @@ def main():
     args = ap.parse_args()
     if args.seed is not None:
         torch.manual_seed(args.seed)
+    label = args.model
+    args.model = NAMES.get(args.model, args.model)
     device = "cuda" if torch.cuda.is_available() else "cpu"
     tok, model = load(args.model, device)
     expert_id = DOMAINS.index(args.domain) if args.model == "E1" else None
@@ -84,7 +88,7 @@ def main():
     if args.prompt is not None:
         gen(args.prompt.replace("\\n", "\n"))
         return
-    print(f"{args.model} listo en {device}. Escribe código y termina con una línea vacía (Ctrl+C para salir).")
+    print(f"{label} listo en {device}. Escribe código y termina con una línea vacía (Ctrl+C para salir).")
     while True:
         try:
             lines = []

@@ -11,7 +11,7 @@ Los tokenizadores dan 3,67 caracteres por token (el BPE de la ronda 5) y 3,73 (S
 
 | Modelo | PPC | Inferencia en lote | Latencia, 1 secuencia | Entrenamiento | Pesos necesarios (fp32) | Pico al inferir | Pico al entrenar |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| D1 / D1+ | 1,718 | 257.000 tok/s (944.000 car/s) | 3,5 ms | 87.000 tok/s | 60 MB | 287 MB | 1,6 GB |
+| D1 / D1+ (Parallax-15M) | 1,718 | 257.000 tok/s (944.000 car/s) | 3,5 ms | 87.000 tok/s | 60 MB | 287 MB | 1,6 GB |
 | D2 | 1,725 | 206.000 tok/s | 3,3 ms | 67.000 tok/s | 107 MB | 381 MB | 1,9 GB |
 | E1 | 1,724 | 210.000 tok/s (771.000 car/s) | 7,0 ms | 83.000 tok/s (solo adaptadores) | 64 MB (base + 1 adaptador) | 350 MB* | 1,6 GB |
 | M1 | 1,725 | 94.000 tok/s (346.000 car/s) | 15,5 ms | 33.000 tok/s | 107 MB (los 12 expertos) | 490 MB | 3,1 GB |
@@ -29,6 +29,6 @@ La cifra de 7.824 tokens/s de `results/starcoder_metrics.json` es otra medición
 - **E1 cumple en memoria.** Con un dominio cargado ocupa lo que D1 más 4 MB, y cambiar de dominio supone cargar esos 4 MB.
 - **El 18% de velocidad que pierde E1 tiene arreglo.** El LoRA se calcula aparte en cada capa, cinco multiplicaciones pequeñas más. Como un archivo usa siempre el mismo dominio, el adaptador **se puede fusionar con los pesos de la base** al cargarlo (`W + B·A`). Así E1 correría a la velocidad exacta de D1, y deshacer la fusión al cambiar de dominio cuesta milisegundos. No está implementado.
 - **D2** gasta un 20% más de tiempo y casi el doble de pesos para ganar un 0,2%.
-- **Frente a StarCoder**, D1+ es unas 8 veces más rápido al inferir, 11 veces más pequeño en pesos y unas 12 veces más rápido al entrenar. StarCoder necesita menos de la mitad de información por carácter (0,26 frente a 0,54 nats).
+- **Frente a StarCoder**, Parallax-15M (D1+) es unas 8 veces más rápido al inferir, 11 veces más pequeño en pesos y unas 12 veces más rápido al entrenar. StarCoder necesita menos de la mitad de información por carácter (0,26 frente a 0,54 nats).
 
 A igual calidad, el orden en eficiencia es **D1+ ≈ E1 fusionado > D2 > M1**.

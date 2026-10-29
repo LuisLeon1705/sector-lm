@@ -2,6 +2,8 @@
 
 Un experimento sobre modelos de lenguaje para código Python **divididos en sectores que se cargan bajo demanda**, en lugar de un único modelo que siempre está entero en memoria. Empezó como un sistema de n-gramas con tokens estructurados (`SS R C IIIIII`), Viterbi y tabla de símbolos, y terminó comparando expertos neuronales por dominio frente a modelos densos y a un MoE aprendido, todo medido con cuidado en una sola GPU de consumo (RTX 3070).
 
+Los modelos neuronales de la ronda 5 forman la familia **Parallax**. El principal es **Parallax-15M**: un transformer de 15M de parámetros entrenado en unos 40 minutos que mejora al mejor n-grama por casi un factor de 2.
+
 ## Resultado en una tabla
 
 PPC = perplejidad por carácter sobre los mismos 100 archivos de test (exactamente 795.700 caracteres). Menos es mejor.
@@ -12,10 +14,10 @@ PPC = perplejidad por carácter sobre los mismos 100 archivos de test (exactamen
 | Sector-LM n-gramas, sectores por dominio | 2 | 4,698 | 0,4 cargas por cada 1.000 tokens |
 | Sector-LM n-gramas, versión final (historia por sector) | 4 | 3,603 | 0,3 cargas por cada 1.000 tokens |
 | N-grama BPE monolítico (comparación justa) | | 3,279 | |
-| E1: transformer de 15M + un adaptador LoRA por dominio | 5 | 1,724 | cambiar de dominio supone cargar ~4 MB |
-| M1: MoE Switch top-1, mismos parámetros | 5 | 1,725 | 2,7× más lento al inferir |
-| D2: denso de 27M | 5 | 1,725 | |
-| **D1+: denso de 15M, una época más** | 5 | **1,718** | el mejor de los nuestros |
+| Parallax-E (E1): base de 15M + un adaptador LoRA por dominio | 5 | 1,724 | cambiar de dominio supone cargar ~4 MB |
+| Parallax-M (M1): MoE Switch top-1, mismos parámetros | 5 | 1,725 | 2,7× más lento al inferir |
+| Parallax-D 27M (D2): denso | 5 | 1,725 | |
+| **Parallax-15M** (D1+): denso, 3 épocas | 5 | **1,718** | el modelo principal |
 | `bigcode/tiny_starcoder_py` (164M, referencia) | | 1,296 | 11× más parámetros, ~600× más datos, ~7.000× más cómputo |
 
 **Conclusión honesta:** enrutar por dominio ahorra mucha memoria, pero a esta escala **no mejora la calidad**. Los expertos por dominio, el MoE y el modelo denso grande empatan a menos del 1%, y entrenar más el modelo pequeño gana a todos. El límite son los datos, no la arquitectura.

@@ -6,7 +6,7 @@
 2. **A esta escala, especializar por dominio de Python no da calidad.** E1, D2 y M1 empatan con D1 a menos del 1%, y seguir entrenando el modelo denso (D1+) gana a todos.
 3. **El límite son los datos, no los parámetros.** Con 53M tokens, duplicar parámetros, como hacen D2 y M1, no mejora nada.
 4. **El MoE token a token es el más caro.** M1 iguala a los demás en calidad, pero es 2,7 veces más lento al inferir y necesita todos sus expertos en memoria.
-5. **Un transformer pequeño y bien entrenado gana a cualquier n-grama.** PPC 1,718 frente a 3,279, con 15M de parámetros y menos de una hora de una GPU de consumo.
+5. **Un transformer pequeño y bien entrenado gana a cualquier n-grama.** Parallax-15M (D1+) llega a un PPC de 1,718 frente a 3,279, con 15M de parámetros y menos de una hora de una GPU de consumo.
 6. **`tiny_starcoder_py` sigue muy por delante** (1,296), con 11 veces más parámetros y unas 600 veces más datos. Según su ficha en Hugging Face se entrenó con 32 A100 durante 18 horas sobre 100.000M tokens: unas 7.000 veces el cómputo de D1+ (6 × parámetros × tokens).
 
 ## Lo que no quedó demostrado

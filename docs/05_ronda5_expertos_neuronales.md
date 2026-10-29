@@ -38,6 +38,18 @@ Todos son decoders tipo GPT con 4 bloques, contexto de 512 y embeddings atados a
 | **E1** | La base de D1 más 12 LoRA de rango 32, uno por dominio, en QKV, salida de atención y las tres proyecciones del MLP. Enrutado duro por los `import` | 26.761.696 | 15.880.672 |
 | **M1** | Switch top-1: los mismos 12 LoRA, con un router aprendido por bloque sobre un promedio causal del estado oculto. La salida se pondera por la probabilidad del gate y hay pérdida auxiliar de balance | 26.779.408 | 15.898.384 |
 
+### Nombres
+
+Los modelos de esta ronda forman la familia **Parallax**. Los códigos cortos (D1, E1...) son los que usan el código y los resultados:
+
+| Nombre | Código |
+| --- | --- |
+| **Parallax-15M**, el modelo principal | D1+ |
+| Parallax-D 15M (2 épocas, la base de los demás) | D1 |
+| Parallax-D 27M | D2 |
+| Parallax-E (expertos por dominio) | E1 |
+| Parallax-M (MoE) | M1 |
+
 Entrenamiento:
 
 - D1, D2 y M1: dos épocas (106,8M tokens).
@@ -67,7 +79,7 @@ Una sola semilla, mismos 795.700 caracteres. Las columnas por tipo de texto est�
 | Modelo | PPC | Código | Comentarios | Strings | Formato |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | D1 | 1,728 | 0,531 | 0,756 | 0,790 | 0,219 |
-| **D1+** | **1,718** | 0,523 | 0,755 | 0,783 | 0,217 |
+| **D1+ (Parallax-15M)** | **1,718** | 0,523 | 0,755 | 0,783 | 0,217 |
 | D2 | 1,725 | 0,529 | 0,749 | 0,789 | 0,220 |
 | E1, adaptador correcto | 1,724 | 0,528 | 0,754 | 0,787 | 0,217 |
 | E1, solo base | 1,728 | 0,531 | 0,756 | 0,790 | 0,219 |

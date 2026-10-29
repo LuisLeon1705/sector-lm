@@ -34,7 +34,7 @@ Todo el proyecto se hizo en dos días, el 28 y el 29 de octubre de 2026. El cód
 | 11:13 | D2 | Terminado |
 | ~11:23 | **Corte de luz** | Se corta en mitad del entrenamiento de M1, mientras se escribía su checkpoint, que queda corrupto. Los demás modelos están intactos |
 | 11:30 | Reanudación | Se aparta el `M1.pt` corrupto, el guardado pasa a ser atómico y se retoma: los modelos terminados se saltan |
-| 12:29–12:30 | **Resultados de la ronda 5** | M1 termina (58 min) y se evalúa todo: D1 1,728, **D1+ 1,718**, D2 1,725, E1 1,724, M1 1,725 |
+| 12:29–12:30 | **Resultados de la ronda 5** | M1 termina (58 min) y se evalúa todo: D1 1,728, **D1+ 1,718 (Parallax-15M)**, D2 1,725, E1 1,724, M1 1,725 |
 | Tarde | Medición de velocidad y memoria | Cada modelo por separado con la GPU limpia, StarCoder incluido ([06_velocidad_y_memoria.md](06_velocidad_y_memoria.md)) |
 | Tarde | Uso y documentación | `neural/generate.py` para probar los modelos, `.gitignore` y esta documentación |
 

@@ -94,12 +94,12 @@ Velocidad y memoria:
 ```powershell
 .venv\Scripts\python.exe -m neural.generate --prompt "def fibonacci(n):\n"
 .venv\Scripts\python.exe -m neural.generate
-.venv\Scripts\python.exe -m neural.generate --model E1 --domain WebBackend --prompt "from flask import Flask\n"
+.venv\Scripts\python.exe -m neural.generate --model Parallax-E --domain WebBackend --prompt "from flask import Flask\n"
 ```
 
 Sin `--prompt` abre una sesión interactiva: escribes código y terminas con una línea vacía. Opciones:
 
-- `--model`: D1+ (por defecto), D1, D2, E1 o M1;
+- `--model`: `Parallax-15M` (por defecto), `Parallax-D15M`, `Parallax-D27M`, `Parallax-E` o `Parallax-M`. También valen los códigos D1+, D1, D2, E1 y M1;
 - `--max-new`: tokens a generar, 200 por defecto;
 - `--temperature`: 0,7 por defecto; con 0 elige siempre el token más probable;
 - `--top-k`: 40 por defecto;
