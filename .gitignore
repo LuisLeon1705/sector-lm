@@ -1,0 +1,17 @@
+# Build y entornos
+/target
+.venv/
+__pycache__/
+.pytest_cache/
+*.log
+
+# Datos descargados y cachés (se regeneran con scripts/prepare_data.py y neural/pipeline.py)
+data/**/*.jsonl
+data/cache/
+
+# Modelos entrenados y sectores n-grama (cientos de MB; se regeneran entrenando)
+sectors_storage/
+results/**/storage_*/
+results/**/checkpoints/
+*.pt
+*.bin

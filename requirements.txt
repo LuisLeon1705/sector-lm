@@ -1,0 +1,12 @@
+# Versiones con las que se midieron los resultados (Python 3.12, Windows, RTX 3070).
+# torch con CUDA 12.4: pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0
+tokenizers==0.23.3
+transformers==5.21.0
+accelerate==1.15.0
+datasets==5.1.0
+tree-sitter==0.26.0
+tree-sitter-python
+tqdm==4.70.1
+numpy==2.5.4
+pytest==9.2.0

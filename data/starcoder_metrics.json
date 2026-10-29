@@ -1,0 +1,11 @@
+{
+  "model_name": "bigcode/tiny_starcoder_py (164M)",
+  "top1_accuracy": 0.7463554424599872,
+  "top5_accuracy": 0.891626435824871,
+  "perplexity_per_char": 1.3725654186481135,
+  "memory_mb": 720.67138671875,
+  "tokens_per_sec": 9338.520951421902,
+  "total_tokens_evaluated": 84098,
+  "total_chars_evaluated": 308363,
+  "elapsed_seconds": 9.005494599998201
+}

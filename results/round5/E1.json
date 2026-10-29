@@ -1,0 +1,64 @@
+{
+  "model": "E1",
+  "parameters_total": 26761696,
+  "parameters_active_per_token": 15880672,
+  "training_tokens": 53410402,
+  "training_seconds": 42.79699999999997,
+  "training_tokens_per_second": 1247994.0650045574,
+  "gpu_hours": 0.011888055555555548,
+  "peak_gpu_memory_bytes": 614086656,
+  "shared_base_from": "E:\\Parallax LLM\\results\\round5\\checkpoints\\round5c4\\D1.pt",
+  "evaluation": {
+    "correct_adapter": {
+      "nats": 433376.02589822933,
+      "characters": 795700,
+      "ppc": 1.7240005870433692,
+      "nats_per_character_by_type": {
+        "code": 0.5280867875169687,
+        "comments": 0.754482739096576,
+        "strings": 0.7874474546747354,
+        "format": 0.2174868228030044
+      },
+      "type_characters": {
+        "code": 358730,
+        "format": 170855,
+        "strings": 181939,
+        "comments": 84176
+      }
+    },
+    "base_only": {
+      "nats": 435359.5479699267,
+      "characters": 795700,
+      "ppc": 1.7283035390896095,
+      "nats_per_character_by_type": {
+        "code": 0.5310935651856981,
+        "comments": 0.755509241653958,
+        "strings": 0.7903020346600705,
+        "format": 0.21923763144993746
+      },
+      "type_characters": {
+        "code": 358730,
+        "format": 170855,
+        "strings": 181939,
+        "comments": 84176
+      }
+    },
+    "wrong_adapter": {
+      "nats": 434405.8498320757,
+      "characters": 795700,
+      "ppc": 1.7262332959374809,
+      "nats_per_character_by_type": {
+        "code": 0.5302701489006587,
+        "comments": 0.7552490623594391,
+        "strings": 0.7878340666805917,
+        "format": 0.2181408327878845
+      },
+      "type_characters": {
+        "code": 358730,
+        "format": 170855,
+        "strings": 181939,
+        "comments": 84176
+      }
+    }
+  }
+}

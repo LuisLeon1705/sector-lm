@@ -1,0 +1,27 @@
+{
+  "model": "D2",
+  "parameters_total": 26772768,
+  "parameters_active_per_token": 26772768,
+  "training_tokens": 106820804,
+  "training_seconds": 3.9530000000000314,
+  "training_tokens_per_second": 27022717.93574479,
+  "gpu_hours": 0.0010980555555555644,
+  "peak_gpu_memory_bytes": 840331264,
+  "evaluation": {
+    "nats": 433768.06929613836,
+    "characters": 795700,
+    "ppc": 1.7248502157729564,
+    "nats_per_character_by_type": {
+      "code": 0.528723771191589,
+      "comments": 0.7486741877924591,
+      "strings": 0.7886836886003543,
+      "format": 0.21998929387317667
+    },
+    "type_characters": {
+      "code": 358730,
+      "format": 170855,
+      "strings": 181939,
+      "comments": 84176
+    }
+  }
+}

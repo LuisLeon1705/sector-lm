@@ -1,0 +1,246 @@
+{
+  "bytes_loaded_per_1000_tokens": 7773017.297997614,
+  "exact_total_chars": 795700,
+  "lru_cache_hit_rate": 0.9995959310902164,
+  "monolithic_bpe": {
+    "bytes_loaded_per_1000_tokens": null,
+    "exact_total_chars": 795700,
+    "memory_mb": 189.37413024902344,
+    "model_name": "Línea base (a): N-gramas monolíticos BPE",
+    "perplexity_per_char": 3.278513087554631,
+    "sector_disambiguation_accuracy": null,
+    "sectors_loaded_per_1000_tokens": null,
+    "symbol_resolution_accuracy": null,
+    "tokens_per_sec": 19099.877141730678,
+    "top1_accuracy": 0.29645066993720204,
+    "top5_accuracy": 0.5219147386184447
+  },
+  "options": {
+    "format": true,
+    "price_sector": true,
+    "sectors": "domain",
+    "spelling": true,
+    "spelling_frequency": false,
+    "text_bpe": false,
+    "unk_singletons": true
+  },
+  "sector_lm": {
+    "bytes_loaded_per_1000_tokens": 7773017.297997614,
+    "exact_total_chars": 795700,
+    "memory_mb": 77.57857608795166,
+    "model_name": "Sector-LM (n-gram + HMM + symboles)",
+    "perplexity_per_char": 3.9606074535080316,
+    "sector_disambiguation_accuracy": 1.0,
+    "sectors_loaded_per_1000_tokens": 0.40406890978359866,
+    "symbol_resolution_accuracy": 0.2280036326726855,
+    "tokens_per_sec": 2122.837397694518,
+    "top1_accuracy": 0.41354208089074745,
+    "top5_accuracy": 0.655431840630091
+  },
+  "sectors_loaded_per_1000_tokens": 0.40406890978359866,
+  "slowest_files": [
+    {
+      "chars": 57541,
+      "elapsed_seconds": 46.3158415,
+      "file_index": 44,
+      "tokens": 9167
+    },
+    {
+      "chars": 16365,
+      "elapsed_seconds": 41.4764188,
+      "file_index": 86,
+      "tokens": 3895
+    },
+    {
+      "chars": 74062,
+      "elapsed_seconds": 30.9711347,
+      "file_index": 28,
+      "tokens": 14685
+    },
+    {
+      "chars": 14559,
+      "elapsed_seconds": 30.2021248,
+      "file_index": 14,
+      "tokens": 3067
+    },
+    {
+      "chars": 68032,
+      "elapsed_seconds": 27.1212112,
+      "file_index": 32,
+      "tokens": 15621
+    }
+  ],
+  "symbol_binding_gain_points": 0.3712805171216438,
+  "test_files_count": 100,
+  "text_type_metrics": {
+    "monolithic_bpe": {
+      "code": {
+        "chars": 309647,
+        "nats_per_char": 1.3467683142072506,
+        "perplexity_per_char": 3.8449796648086525
+      },
+      "comments": {
+        "chars": 97904,
+        "nats_per_char": 1.1462026538541936,
+        "perplexity_per_char": 3.146222899536202
+      },
+      "format": {
+        "chars": 180315,
+        "nats_per_char": 0.5841910325267309,
+        "perplexity_per_char": 1.7935394835058718
+      },
+      "strings": {
+        "chars": 207834,
+        "nats_per_char": 1.4926682751960776,
+        "perplexity_per_char": 4.4489507203557235
+      }
+    },
+    "sector_lm": {
+      "code": {
+        "chars": 309647,
+        "nats_per_char": 1.3945185843716656,
+        "perplexity_per_char": 4.033032540312868
+      },
+      "comments": {
+        "chars": 97904,
+        "nats_per_char": 1.6900290403372547,
+        "perplexity_per_char": 5.419638090963886
+      },
+      "format": {
+        "chars": 180315,
+        "nats_per_char": 0.427684087666874,
+        "perplexity_per_char": 1.5337014892115781
+      },
+      "strings": {
+        "chars": 207834,
+        "nats_per_char": 2.0247527559867904,
+        "perplexity_per_char": 7.574238028105613
+      }
+    }
+  },
+  "tiny_starcoder_py": {
+    "bytes_loaded_per_1000_tokens": null,
+    "exact_total_chars": 795700,
+    "memory_mb": 1279.0048828125,
+    "model_name": "bigcode/tiny_starcoder_py (164M)",
+    "perplexity_per_char": 1.2959569037928889,
+    "sector_disambiguation_accuracy": null,
+    "sectors_loaded_per_1000_tokens": null,
+    "symbol_resolution_accuracy": null,
+    "tokens_per_sec": 7823.632186829123,
+    "top1_accuracy": 0.7845244013394239,
+    "top5_accuracy": 0.9117978107735456
+  },
+  "total_eval_time_secs": 218.1983791,
+  "unk_diagnostics": [
+    {
+      "p_unk_unigram": 0.0013803811625741596,
+      "sector_id": 0,
+      "singleton_token_fraction": 0.022077839149452445,
+      "singleton_types": 80214,
+      "training_tokens": 3633236
+    },
+    {
+      "p_unk_unigram": 0.0012768976645644659,
+      "sector_id": 1,
+      "singleton_token_fraction": 0.016194577728203697,
+      "singleton_types": 26947,
+      "training_tokens": 1663952
+    },
+    {
+      "p_unk_unigram": 0.0008274297478492556,
+      "sector_id": 2,
+      "singleton_token_fraction": 0.019035857166300067,
+      "singleton_types": 94193,
+      "training_tokens": 4948188
+    },
+    {
+      "p_unk_unigram": 0.0010879882657252244,
+      "sector_id": 3,
+      "singleton_token_fraction": 0.025168965023104305,
+      "singleton_types": 79213,
+      "training_tokens": 3147249
+    },
+    {
+      "p_unk_unigram": 0.0010164720830335302,
+      "sector_id": 4,
+      "singleton_token_fraction": 0.02514606193574665,
+      "singleton_types": 66923,
+      "training_tokens": 2661371
+    },
+    {
+      "p_unk_unigram": 0.0009482052124785628,
+      "sector_id": 5,
+      "singleton_token_fraction": 0.022570477973319396,
+      "singleton_types": 99675,
+      "training_tokens": 4416167
+    },
+    {
+      "p_unk_unigram": 0.0009996826271148997,
+      "sector_id": 6,
+      "singleton_token_fraction": 0.026932657460224337,
+      "singleton_types": 126060,
+      "training_tokens": 4680563
+    },
+    {
+      "p_unk_unigram": 0.0015950642243992862,
+      "sector_id": 7,
+      "singleton_token_fraction": 0.031245356564047453,
+      "singleton_types": 36168,
+      "training_tokens": 1157548
+    },
+    {
+      "p_unk_unigram": 0.00287333929090006,
+      "sector_id": 8,
+      "singleton_token_fraction": 0.02811153826888399,
+      "singleton_types": 17959,
+      "training_tokens": 638848
+    },
+    {
+      "p_unk_unigram": 0.002271243731649988,
+      "sector_id": 9,
+      "singleton_token_fraction": 0.026211140863609685,
+      "singleton_types": 30188,
+      "training_tokens": 1151724
+    },
+    {
+      "p_unk_unigram": 0.0016514183044320503,
+      "sector_id": 10,
+      "singleton_token_fraction": 0.026984353919015706,
+      "singleton_types": 38881,
+      "training_tokens": 1440872
+    },
+    {
+      "p_unk_unigram": 0.0011722817062699354,
+      "sector_id": 11,
+      "singleton_token_fraction": 0.0208084963510952,
+      "singleton_types": 54911,
+      "training_tokens": 2638874
+    },
+    {
+      "p_unk_unigram": 0.0011086840206195239,
+      "sector_id": 12,
+      "singleton_token_fraction": 0.047352164732494297,
+      "singleton_types": 141595,
+      "training_tokens": 2990254
+    },
+    {
+      "p_unk_unigram": 1.0,
+      "sector_id": 13,
+      "singleton_token_fraction": 0.0,
+      "singleton_types": 0,
+      "training_tokens": 0
+    },
+    {
+      "p_unk_unigram": 1.0,
+      "sector_id": 14,
+      "singleton_token_fraction": 0.0,
+      "singleton_types": 0,
+      "training_tokens": 0
+    }
+  ],
+  "unseen_spelling_characters": 314230,
+  "unseen_spelling_nats_per_char": 2.4458234096760667,
+  "unseen_token_fraction": 0.09525764203342868,
+  "viterbi_disambiguation_accuracy": 1.0
+}

@@ -1,0 +1,136 @@
+{
+  "D1": {
+    "tokens": 106820804,
+    "optimizer_steps": 0,
+    "seconds": 0.7339999999999804,
+    "tokens_per_second": 145532430.51771504,
+    "gpu_hours": 0.00020388888888888345,
+    "peak_gpu_memory_bytes": 245501952
+  },
+  "D1+": {
+    "tokens": 53410402,
+    "optimizer_steps": 0,
+    "seconds": 0.5469999999999686,
+    "tokens_per_second": 97642416.8190184,
+    "gpu_hours": 0.00015194444444443573,
+    "peak_gpu_memory_bytes": 428917760
+  },
+  "E1": {
+    "adapters": {
+      "0": {
+        "tokens": 5421856,
+        "optimizer_steps": 0,
+        "seconds": 3.781000000000006,
+        "tokens_per_second": 1433974.0809309685,
+        "gpu_hours": 0.0010502777777777793,
+        "peak_gpu_memory_bytes": 614086656
+      },
+      "1": {
+        "tokens": 2494658,
+        "optimizer_steps": 0,
+        "seconds": 3.1409999999999627,
+        "tokens_per_second": 794224.132441907,
+        "gpu_hours": 0.0008724999999999896,
+        "peak_gpu_memory_bytes": 533069824
+      },
+      "2": {
+        "tokens": 7065169,
+        "optimizer_steps": 0,
+        "seconds": 4.5470000000000255,
+        "tokens_per_second": 1553808.8849790983,
+        "gpu_hours": 0.0012630555555555626,
+        "peak_gpu_memory_bytes": 584445440
+      },
+      "3": {
+        "tokens": 4816984,
+        "optimizer_steps": 0,
+        "seconds": 3.8899999999999864,
+        "tokens_per_second": 1238299.2287917782,
+        "gpu_hours": 0.0010805555555555518,
+        "peak_gpu_memory_bytes": 585202176
+      },
+      "4": {
+        "tokens": 3900171,
+        "optimizer_steps": 0,
+        "seconds": 2.9850000000000136,
+        "tokens_per_second": 1306589.9497487377,
+        "gpu_hours": 0.0008291666666666704,
+        "peak_gpu_memory_bytes": 587135488
+      },
+      "5": {
+        "tokens": 6276757,
+        "optimizer_steps": 0,
+        "seconds": 5.2029999999999745,
+        "tokens_per_second": 1206372.6696136903,
+        "gpu_hours": 0.0014452777777777708,
+        "peak_gpu_memory_bytes": 587287040
+      },
+      "6": {
+        "tokens": 7427594,
+        "optimizer_steps": 0,
+        "seconds": 3.7180000000000177,
+        "tokens_per_second": 1997739.1070467897,
+        "gpu_hours": 0.0010327777777777826,
+        "peak_gpu_memory_bytes": 586144256
+      },
+      "7": {
+        "tokens": 1776605,
+        "optimizer_steps": 0,
+        "seconds": 4.735000000000014,
+        "tokens_per_second": 375206.9693769789,
+        "gpu_hours": 0.0013152777777777815,
+        "peak_gpu_memory_bytes": 585202176
+      },
+      "8": {
+        "tokens": 1662824,
+        "optimizer_steps": 0,
+        "seconds": 4.656000000000006,
+        "tokens_per_second": 357135.73883161467,
+        "gpu_hours": 0.001293333333333335,
+        "peak_gpu_memory_bytes": 586897920
+      },
+      "9": {
+        "tokens": 2359315,
+        "optimizer_steps": 0,
+        "seconds": 1.906000000000006,
+        "tokens_per_second": 1237835.781741864,
+        "gpu_hours": 0.0005294444444444461,
+        "peak_gpu_memory_bytes": 587664896
+      },
+      "10": {
+        "tokens": 3655927,
+        "optimizer_steps": 0,
+        "seconds": 3.4069999999999823,
+        "tokens_per_second": 1073063.3988846547,
+        "gpu_hours": 0.000946388888888884,
+        "peak_gpu_memory_bytes": 586677760
+      },
+      "11": {
+        "tokens": 6552542,
+        "optimizer_steps": 0,
+        "seconds": 0.8279999999999745,
+        "tokens_per_second": 7913698.067633093,
+        "gpu_hours": 0.00022999999999999293,
+        "peak_gpu_memory_bytes": 588639744
+      }
+    },
+    "tokens": 53410402,
+    "shared_base_checkpoint": "E:\\Parallax LLM\\results\\round5\\checkpoints\\round5c4\\D1.pt"
+  },
+  "D2": {
+    "tokens": 106820804,
+    "optimizer_steps": 0,
+    "seconds": 3.9530000000000314,
+    "tokens_per_second": 27022717.93574479,
+    "gpu_hours": 0.0010980555555555644,
+    "peak_gpu_memory_bytes": 840331264
+  },
+  "M1": {
+    "tokens": 106820804,
+    "optimizer_steps": 5460,
+    "seconds": 3495.14,
+    "tokens_per_second": 30562.668162076483,
+    "gpu_hours": 0.9708722222222221,
+    "peak_gpu_memory_bytes": 4567603712
+  }
+}

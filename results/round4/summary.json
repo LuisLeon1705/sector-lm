@@ -1,0 +1,108 @@
+{
+  "exact_total_chars": 795700,
+  "test_files_count": 100,
+  "ablation": [
+    {
+      "variant": "A_sector",
+      "history": "sector",
+      "ppc": 3.6029594909527685,
+      "sectors_loaded_per_1000_tokens": 0.30694207873280477,
+      "bytes_loaded_per_1000_tokens": 4051646.3335552537,
+      "summary": "A_sector.json"
+    },
+    {
+      "variant": "B_mixed",
+      "history": "mixed",
+      "ppc": 3.6480440253087827,
+      "sectors_loaded_per_1000_tokens": 0.30694207873280477,
+      "bytes_loaded_per_1000_tokens": 3934691.6312890705,
+      "summary": "B_mixed.json"
+    }
+  ],
+  "comparison": [
+    {
+      "model": "A sector history",
+      "ppc": 3.6029594909527685
+    },
+    {
+      "model": "B mixed history",
+      "ppc": 3.6480440253087827
+    },
+    {
+      "model": "Línea base (a): N-gramas monolíticos BPE",
+      "ppc": 3.2785130849161814
+    },
+    {
+      "model": "bigcode/tiny_starcoder_py (164M)",
+      "ppc": 1.2959569037928889
+    }
+  ],
+  "text_type_metrics": {
+    "monolithic_bpe": {
+      "code": {
+        "chars": 309647,
+        "nats_per_char": 1.3467683135463315,
+        "perplexity_per_char": 3.844979662267432
+      },
+      "comments": {
+        "chars": 96241,
+        "nats_per_char": 1.1367641894385698,
+        "perplexity_per_char": 3.116667086812323
+      },
+      "format": {
+        "chars": 180315,
+        "nats_per_char": 0.5842968868872221,
+        "perplexity_per_char": 1.7937293475297043
+      },
+      "strings": {
+        "chars": 209497,
+        "nats_per_char": 1.4941628424730224,
+        "perplexity_per_char": 4.4556049478758135
+      }
+    },
+    "B_mixed": {
+      "code": {
+        "chars": 309647,
+        "nats_per_char": 1.4360405821271953,
+        "perplexity_per_char": 4.204017358824749
+      },
+      "comments": {
+        "chars": 96241,
+        "nats_per_char": 1.3524045804321954,
+        "perplexity_per_char": 3.8667121814214225
+      },
+      "format": {
+        "chars": 180315,
+        "nats_per_char": 0.5057074424561332,
+        "perplexity_per_char": 1.6581581571047903
+      },
+      "strings": {
+        "chars": 209497,
+        "nats_per_char": 1.7364393076489348,
+        "perplexity_per_char": 5.67709300966629
+      }
+    },
+    "A_sector": {
+      "code": {
+        "chars": 309647,
+        "nats_per_char": 1.435573653842665,
+        "perplexity_per_char": 4.202054842424122
+      },
+      "comments": {
+        "chars": 96241,
+        "nats_per_char": 1.3376564864135982,
+        "perplexity_per_char": 3.8101040040372136
+      },
+      "format": {
+        "chars": 180315,
+        "nats_per_char": 0.481410897769388,
+        "perplexity_per_char": 1.6183561272239844
+      },
+      "strings": {
+        "chars": 209497,
+        "nats_per_char": 1.7175847037651635,
+        "perplexity_per_char": 5.571056449705242
+      }
+    }
+  }
+}

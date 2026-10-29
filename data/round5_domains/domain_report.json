@@ -1,0 +1,365 @@
+{
+  "domain_mapping_after_merge": [
+    {
+      "destination": 0,
+      "source": 0,
+      "tokens": 2635040
+    },
+    {
+      "destination": 1,
+      "source": 1,
+      "tokens": 1222976
+    },
+    {
+      "destination": 2,
+      "source": 2,
+      "tokens": 3598897
+    },
+    {
+      "destination": 3,
+      "source": 3,
+      "tokens": 2241523
+    },
+    {
+      "destination": 4,
+      "source": 4,
+      "tokens": 1968530
+    },
+    {
+      "destination": 5,
+      "source": 5,
+      "tokens": 3137855
+    },
+    {
+      "destination": 6,
+      "source": 6,
+      "tokens": 3313597
+    },
+    {
+      "destination": 7,
+      "source": 7,
+      "tokens": 808498
+    },
+    {
+      "destination": 12,
+      "source": 8,
+      "tokens": 457344
+    },
+    {
+      "destination": 9,
+      "source": 9,
+      "tokens": 850492
+    },
+    {
+      "destination": 10,
+      "source": 10,
+      "tokens": 1001628
+    },
+    {
+      "destination": 11,
+      "source": 11,
+      "tokens": 1851154
+    },
+    {
+      "destination": 12,
+      "source": 12,
+      "tokens": 2115687
+    }
+  ],
+  "splits": {
+    "test": {
+      "domains": [
+        {
+          "files": 63,
+          "id": 0,
+          "name": "00_ScientificNumeric (numpy/scipy/pandas)",
+          "token_fraction": 0.14602126378244903,
+          "tokens": 91896
+        },
+        {
+          "files": 16,
+          "id": 1,
+          "name": "01_MachineLearning (torch/tf/sklearn)",
+          "token_fraction": 0.09586180924883965,
+          "tokens": 60329
+        },
+        {
+          "files": 63,
+          "id": 2,
+          "name": "02_WebBackend (django/flask/web)",
+          "token_fraction": 0.10028236243769197,
+          "tokens": 63111
+        },
+        {
+          "files": 39,
+          "id": 3,
+          "name": "03_NetworkingCloud (requests/http/cloud)",
+          "token_fraction": 0.07271031393554764,
+          "tokens": 45759
+        },
+        {
+          "files": 41,
+          "id": 4,
+          "name": "04_TestingQa (unittest/pytest/mock)",
+          "token_fraction": 0.08173415346088636,
+          "tokens": 51438
+        },
+        {
+          "files": 51,
+          "id": 5,
+          "name": "05_DataStorage (json/sql/xml/archive)",
+          "token_fraction": 0.13052708184697132,
+          "tokens": 82145
+        },
+        {
+          "files": 64,
+          "id": 6,
+          "name": "06_SystemOsCli (os/sys/subprocess/cli)",
+          "token_fraction": 0.06753817136555687,
+          "tokens": 42504
+        },
+        {
+          "files": 16,
+          "id": 7,
+          "name": "07_RuntimeInspect (logging/inspect/ast)",
+          "token_fraction": 0.01594863132872422,
+          "tokens": 10037
+        },
+        {
+          "files": 13,
+          "id": 8,
+          "name": "08_AsyncConcurrency (threading/asyncio)",
+          "token_fraction": 0.03456039966122863,
+          "tokens": 21750
+        },
+        {
+          "files": 21,
+          "id": 9,
+          "name": "09_GuiGraphicsMedia (qt/tk/pil/cv2)",
+          "token_fraction": 0.06326698266259675,
+          "tokens": 39816
+        },
+        {
+          "files": 11,
+          "id": 10,
+          "name": "10_TextCryptoMath (re/hashlib/math/random)",
+          "token_fraction": 0.014350113532899117,
+          "tokens": 9031
+        },
+        {
+          "files": 34,
+          "id": 11,
+          "name": "11_StdlibCoreTypes (collections/typing/time)",
+          "token_fraction": 0.10453448333394244,
+          "tokens": 65787
+        },
+        {
+          "files": 68,
+          "id": 12,
+          "name": "12_GeneralLocal (local/other)",
+          "token_fraction": 0.07266423340266599,
+          "tokens": 45730
+        }
+      ],
+      "files": 500,
+      "tokens": 629333
+    },
+    "train": {
+      "domains": [
+        {
+          "files": 1496,
+          "id": 0,
+          "name": "00_ScientificNumeric (numpy/scipy/pandas)",
+          "token_fraction": 0.1045517158302901,
+          "tokens": 2635040
+        },
+        {
+          "files": 695,
+          "id": 1,
+          "name": "01_MachineLearning (torch/tf/sklearn)",
+          "token_fraction": 0.048524591360762974,
+          "tokens": 1222976
+        },
+        {
+          "files": 2984,
+          "id": 2,
+          "name": "02_WebBackend (django/flask/web)",
+          "token_fraction": 0.14279512130612193,
+          "tokens": 3598897
+        },
+        {
+          "files": 1580,
+          "id": 3,
+          "name": "03_NetworkingCloud (requests/http/cloud)",
+          "token_fraction": 0.08893795757296259,
+          "tokens": 2241523
+        },
+        {
+          "files": 1638,
+          "id": 4,
+          "name": "04_TestingQa (unittest/pytest/mock)",
+          "token_fraction": 0.07810628649409534,
+          "tokens": 1968530
+        },
+        {
+          "files": 1767,
+          "id": 5,
+          "name": "05_DataStorage (json/sql/xml/archive)",
+          "token_fraction": 0.12450214200796002,
+          "tokens": 3137855
+        },
+        {
+          "files": 2902,
+          "id": 6,
+          "name": "06_SystemOsCli (os/sys/subprocess/cli)",
+          "token_fraction": 0.13147513962600257,
+          "tokens": 3313597
+        },
+        {
+          "files": 766,
+          "id": 7,
+          "name": "07_RuntimeInspect (logging/inspect/ast)",
+          "token_fraction": 0.03207915369229988,
+          "tokens": 808498
+        },
+        {
+          "files": 310,
+          "id": 8,
+          "name": "08_AsyncConcurrency (threading/asyncio)",
+          "token_fraction": 0.018146252020723858,
+          "tokens": 457344
+        },
+        {
+          "files": 512,
+          "id": 9,
+          "name": "09_GuiGraphicsMedia (qt/tk/pil/cv2)",
+          "token_fraction": 0.033745369292282126,
+          "tokens": 850492
+        },
+        {
+          "files": 753,
+          "id": 10,
+          "name": "10_TextCryptoMath (re/hashlib/math/random)",
+          "token_fraction": 0.03974206312756612,
+          "tokens": 1001628
+        },
+        {
+          "files": 1009,
+          "id": 11,
+          "name": "11_StdlibCoreTypes (collections/typing/time)",
+          "token_fraction": 0.07344910398555804,
+          "tokens": 1851154
+        },
+        {
+          "files": 3563,
+          "id": 12,
+          "name": "12_GeneralLocal (local/other)",
+          "token_fraction": 0.08394510368337443,
+          "tokens": 2115687
+        }
+      ],
+      "files": 19975,
+      "tokens": 25203221
+    },
+    "valid": {
+      "domains": [
+        {
+          "files": 50,
+          "id": 0,
+          "name": "00_ScientificNumeric (numpy/scipy/pandas)",
+          "token_fraction": 0.14441681315802185,
+          "tokens": 98666
+        },
+        {
+          "files": 13,
+          "id": 1,
+          "name": "01_MachineLearning (torch/tf/sklearn)",
+          "token_fraction": 0.04176357539413615,
+          "tokens": 28533
+        },
+        {
+          "files": 63,
+          "id": 2,
+          "name": "02_WebBackend (django/flask/web)",
+          "token_fraction": 0.13452517041055148,
+          "tokens": 91908
+        },
+        {
+          "files": 50,
+          "id": 3,
+          "name": "03_NetworkingCloud (requests/http/cloud)",
+          "token_fraction": 0.13005651321788692,
+          "tokens": 88855
+        },
+        {
+          "files": 49,
+          "id": 4,
+          "name": "04_TestingQa (unittest/pytest/mock)",
+          "token_fraction": 0.0645606064376181,
+          "tokens": 44108
+        },
+        {
+          "files": 41,
+          "id": 5,
+          "name": "05_DataStorage (json/sql/xml/archive)",
+          "token_fraction": 0.06747042972586478,
+          "tokens": 46096
+        },
+        {
+          "files": 58,
+          "id": 6,
+          "name": "06_SystemOsCli (os/sys/subprocess/cli)",
+          "token_fraction": 0.0686326026085951,
+          "tokens": 46890
+        },
+        {
+          "files": 19,
+          "id": 7,
+          "name": "07_RuntimeInspect (logging/inspect/ast)",
+          "token_fraction": 0.02043902032046112,
+          "tokens": 13964
+        },
+        {
+          "files": 13,
+          "id": 8,
+          "name": "08_AsyncConcurrency (threading/asyncio)",
+          "token_fraction": 0.02036144454869197,
+          "tokens": 13911
+        },
+        {
+          "files": 18,
+          "id": 9,
+          "name": "09_GuiGraphicsMedia (qt/tk/pil/cv2)",
+          "token_fraction": 0.044003026918792806,
+          "tokens": 30063
+        },
+        {
+          "files": 20,
+          "id": 10,
+          "name": "10_TextCryptoMath (re/hashlib/math/random)",
+          "token_fraction": 0.01864160432550794,
+          "tokens": 12736
+        },
+        {
+          "files": 28,
+          "id": 11,
+          "name": "11_StdlibCoreTypes (collections/typing/time)",
+          "token_fraction": 0.18701323032832115,
+          "tokens": 127768
+        },
+        {
+          "files": 78,
+          "id": 12,
+          "name": "12_GeneralLocal (local/other)",
+          "token_fraction": 0.05811596260555062,
+          "tokens": 39705
+        }
+      ],
+      "files": 500,
+      "tokens": 683203
+    }
+  },
+  "training_merge_below_3_percent": [
+    8
+  ]
+}

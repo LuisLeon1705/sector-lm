@@ -1,0 +1,47 @@
+{
+  "assumed_epochs": 2,
+  "adapter_epochs": 1,
+  "estimate_method": "full budgets divided by each corrected smoke throughput; D1+ adds N train tokens and E1 trains N adapter tokens on the D1 checkpoint; excludes eval/data prep",
+  "parameters": {
+    "D1": 14891488,
+    "D2": 26772768,
+    "E1": 26761696,
+    "M1": 26779408,
+    "D1+": 14891488
+  },
+  "router_parameters_M1": 17712,
+  "active_parameters_per_token": {
+    "D1": 14891488,
+    "D1+": 14891488,
+    "D2": 26772768,
+    "E1": 15880672,
+    "M1": 15898384
+  },
+  "per_model": {
+    "D1": {
+      "full_training_tokens": 106820804,
+      "measured_smoke_tokens_per_second": 61868.94702137301,
+      "estimated_gpu_hours": 0.47960159311108086,
+      "smoke_peak_gpu_memory_bytes": 1749697024
+    },
+    "D1+": {
+      "full_training_tokens": 53410402,
+      "measured_smoke_tokens_per_second": 65352.24166666667,
+      "estimated_gpu_hours": 0.22701934010849836,
+      "smoke_peak_gpu_memory_bytes": null
+    },
+    "D2": {
+      "full_training_tokens": 106820804,
+      "measured_smoke_tokens_per_second": 53535.26666666667,
+      "estimated_gpu_hours": 0.5542597880441843,
+      "smoke_peak_gpu_memory_bytes": null
+    },
+    "E1": {
+      "full_training_tokens": 53410402,
+      "measured_smoke_tokens_per_second": 59477.49166666667,
+      "estimated_gpu_hours": 0.24944264396564209,
+      "smoke_peak_gpu_memory_bytes": null
+    }
+  },
+  "total_sequential_gpu_hours": 1.5103233652294057
+}

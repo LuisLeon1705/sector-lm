@@ -1,0 +1,11 @@
+{
+  "train_count": 20000,
+  "valid_count": 500,
+  "test_count": 500,
+  "test_hashes_count": 500,
+  "leaks_prevented": 0,
+  "discarded_syntax_train": 105,
+  "discarded_syntax_valid": 7,
+  "train_scanned": 20105,
+  "valid_scanned": 1008
+}

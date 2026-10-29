@@ -1,0 +1,14 @@
+{
+  "model_name": "bigcode/tiny_starcoder_py (164M)",
+  "evaluation_timestamp": "2026-10-28T19:47:10.356685+00:00",
+  "command_executed": "scripts\\eval_starcoder.py --test-file data\\test.jsonl --max-files 100 --window-size 2048 --stride 1024 --output results\\starcoder_metrics.json",
+  "evaluation_strategy": "Sliding window (window=2048, stride=1024) over 100 complete test files",
+  "top1_accuracy": 0.7845244013394239,
+  "top5_accuracy": 0.9117978107735455,
+  "perplexity_per_char": 1.2959569037928889,
+  "memory_mb": 1279.0048828125,
+  "tokens_per_sec": 7823.6321868291225,
+  "total_tokens_evaluated": 213226,
+  "total_chars_evaluated": 795700,
+  "elapsed_seconds": 27.25409310000032
+}

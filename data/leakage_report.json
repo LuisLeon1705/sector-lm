@@ -1,0 +1,24 @@
+{
+  "train_count": 20000,
+  "valid_count": 500,
+  "test_count": 500,
+  "test_hashes_count": 500,
+  "leaks_prevented": 0,
+  "discarded_syntax_train": 105,
+  "discarded_syntax_valid": 7,
+  "train_scanned": 20105,
+  "valid_scanned": 1008,
+  "round5": {
+    "normalization": "Unicode NFC and CRLF/CR to LF before SHA-256",
+    "train_files": 19975,
+    "extra_streamed_files": 0,
+    "extra_streamed_bytes": 0,
+    "download_skipped": true,
+    "duplicates_removed": 25,
+    "valid_files_checked": 500,
+    "test_files_checked": 500,
+    "normalized_train_valid_test_overlap": 0,
+    "total_dataset_bytes": 421363300,
+    "train_file": "data\\round5\\train.jsonl"
+  }
+}

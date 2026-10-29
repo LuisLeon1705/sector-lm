@@ -1,0 +1,27 @@
+{
+  "model": "M1",
+  "parameters_total": 26779408,
+  "parameters_active_per_token": 15898384,
+  "training_tokens": 106820804,
+  "training_seconds": 3495.14,
+  "training_tokens_per_second": 30562.668162076483,
+  "gpu_hours": 0.9708722222222221,
+  "peak_gpu_memory_bytes": 4567603712,
+  "evaluation": {
+    "nats": 433635.2951275569,
+    "characters": 795700,
+    "ppc": 1.7245624233297059,
+    "nats_per_character_by_type": {
+      "code": 0.5261999089959928,
+      "comments": 0.7582426752486147,
+      "strings": 0.7901996469198708,
+      "format": 0.2181828613780255
+    },
+    "type_characters": {
+      "code": 358730,
+      "format": 170855,
+      "strings": 181939,
+      "comments": 84176
+    }
+  }
+}

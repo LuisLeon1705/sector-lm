@@ -1,0 +1,32 @@
+{
+  "D1": {
+    "tokens": 11165427,
+    "optimizer_steps": 571,
+    "seconds": 180.46899999999732,
+    "tokens_per_second": 61868.94702137301,
+    "gpu_hours": 0.05013027777777703,
+    "peak_gpu_memory_bytes": 1749697024
+  },
+  "D1+": {
+    "tokens": 7842269,
+    "seconds": 120.0,
+    "tokens_per_second": 65352.24166666667,
+    "gpu_hours": 0.03333333333333333,
+    "peak_gpu_memory_bytes": null
+  },
+  "D2": {
+    "tokens": 6424232,
+    "seconds": 120.0,
+    "tokens_per_second": 53535.26666666667,
+    "gpu_hours": 0.03333333333333333,
+    "peak_gpu_memory_bytes": null
+  },
+  "E1": {
+    "tokens": 7137299,
+    "seconds": 120.0,
+    "tokens_per_second": 59477.49166666667,
+    "gpu_hours": 0.03333333333333333,
+    "peak_gpu_memory_bytes": null,
+    "smoke_domain": 11
+  }
+}
